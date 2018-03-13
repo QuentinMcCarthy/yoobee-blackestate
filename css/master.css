@@ -6,10 +6,20 @@
 
 body {
 	margin-top:73px;
+	margin-bottom:20px;
 }
 
 h1 {
 	font-size:1.5em;
+}
+
+h2 {
+	font-size:1.1em;
+}
+
+a, a:hover, a:active, a:visited {
+	color:black;
+	text-decoration:underline;
 }
 
 #header {
@@ -40,15 +50,55 @@ h1 {
 	padding-top:5px;
 }
 
-#firstSection img {
+#sideNote {
+	margin-top:10px;
+	padding-bottom:20px;
+}
+
+#footer {
+	height:40px;
 	width:100vw;
+	border-top:1px solid black;
+	padding:10px;
+	display:flex;
+	justify-content:space-between;
+}
+
+#promotionals {
+	order:1;
+	flex-basis:70%;
+}
+
+#promotionals ul {
+	list-style:none;
+}
+
+#socialMedia {
+	order:2;
+	flex-basis:25%;
+	display:flex;
+	justify-content:space-between;
+}
+
+#socialMedia a {
+	flex-basis:20%;
 }
 
 .content {
 	text-align:center;
 }
 
+.content p {
+	padding-top:5px;
+	font-size:0.9em;
+}
+
 .subtitle {
-	font-size:1.1em;
 	color:grey;
+	padding-bottom:5px;
+	border-bottom:1px solid grey;
+}
+
+.homeSection img {
+	width:100vw;
 }
