@@ -7,7 +7,9 @@
 		<title>Black Estate Wine, Waipara</title>
 
 		<link rel="stylesheet" href="css/master.css">
+		<!-- <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet"> -->
 
+		<script defer src="js/js.js"></script>
 		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	</head>
 	<body>
@@ -15,9 +17,38 @@
 			<div id="navButton">
 				<i class="fas fa-bars fa-3x"></i>
 			</div>
+
 			<div id="logo">
-				<img id="logoImage" src="http://blackestate.co.nz/static/i/logo.jpg" alt="Black Estate Logo">
+				<a href="index.html">
+					<img id="logoImage" src="http://blackestate.co.nz/static/i/logo.jpg" alt="Black Estate Logo">
+				</a>
 			</div>
+
+			<nav id="mainNavigation">
+				<button class="dropbtn" onclick="dropdown(firstDropdown,false)">Menu <i class="fa fa-caret-down"></i></button>
+
+				<ul id="firstDropdown" class="dropdown" onload="resetDropdown()" style="display:none;">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#">Menu</a></li>
+					<li>
+						<button class="dropbtn" onclick="dropdown(bookingDropdown,vineyardList)">Booking <i class="fa fa-caret-down"></i></button>
+
+						<ul id="bookingDropdown" class="dropdown2" style="display:none;">
+							<li><a href="book-table.html"><i class="fa fa-caret-down"></i> Book a Table</a></li>
+							<li><a href="https://www.booking.com/hotel/nz/black-estate-b-amp-b.en-gb.html" target="blank"><i class="fa fa-caret-down"></i> Accomodation</a></li>
+						</ul>
+					</li>
+					<li id="vineyardList">
+						<button class="dropbtn" onclick="dropdown(vineyardDropdown,false)">Our Vineyards <i class="fa fa-caret-down"></i></button>
+
+						<ul id="vineyardDropdown" class="dropdown2" style="display:none;">
+							<li><a href="vineyards/waipara.html"><i class="fa fa-caret-down"></i> Waipara</a></li>
+							<li><a href="vineyards/damsteep.html"><i class="fa fa-caret-down"></i> Damsteep</a></li>
+							<li><a href="vineyards/netherwood.html"><i class="fa fa-caret-down"></i> Netherwood</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
 		</header>
 
 		<main id="mainContainer">
@@ -57,8 +88,8 @@
 				</ul>
 			</div>
 			<div id="socialMedia">
-				<a class="instagramIcon" href="https://instagram.com/blackestate"><i class="fab fa-instagram fa-2x"></i></a>
-				<a class="facebookIcon" href="https://www.facebook.com/blackestatewines/"><i class="fab fa-facebook fa-2x"></i></a>
+				<a class="instagramIcon" href="https://instagram.com/blackestate" target="blank"><i class="fab fa-instagram fa-2x"></i></a>
+				<a class="facebookIcon" href="https://www.facebook.com/blackestatewines/" target="blank"><i class="fab fa-facebook fa-2x"></i></a>
 			</div>
 		</footer>
 	</body>

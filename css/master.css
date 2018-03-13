@@ -32,18 +32,73 @@ a, a:hover, a:active, a:visited {
 }
 
 #navButton {
+	display:none;
 	float:left;
 	padding:0.75em;
 }
 
 #logo {
-	float:left;
+	/* float:left; */
 	padding:0.5em;
-	margin-left:2.5em;
+	/* margin-left:2.5em; */
+	width:100vw;
+	text-align:center;
+	border-bottom:1px solid grey;
 }
 
 #logoImage {
 	width:40vw;
+}
+
+#mainNavigation {
+	height:7.5vh;
+	font-family:Arial;
+}
+
+#mainNavigation button {
+	background-color:white;
+	border:none;
+	width:100%;
+	height:100%;
+	font-size:1em;
+}
+
+#mainNavigation li {
+	width:100%;
+	border-bottom:1px solid grey;
+	height:10vh;
+}
+
+#mainNavigation > ul > li > ul svg {
+	transform:rotate(-90deg);
+}
+
+#mainNavigation a, #mainNavigation a:hover, #mainNavigation a:active, #mainNavigation a:visited {
+	text-decoration:none;
+	display:block;
+	height:100%;
+	padding-top:15px;
+}
+
+#mainNavigation ul {
+	list-style:none;
+	text-align:center;
+	background-color:white;
+	width:100%;
+}
+
+#firstDropdown {
+	height:100vh;
+	border-top:1px solid black;
+}
+
+#firstDropdown > li {
+	height:10vh;
+	border-bottom:1px solid grey;
+}
+
+#bookingDropdown {
+	height:100px;
 }
 
 #firstSection {
@@ -82,6 +137,10 @@ a, a:hover, a:active, a:visited {
 
 #socialMedia a {
 	flex-basis:20%;
+}
+
+.dropdown, .dropdown2 {
+	display:none;
 }
 
 .content {
