@@ -1,163 +1,163 @@
 * {
-	padding:0;
-	margin:0;
-	box-sizing:border-box;
-}
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
 
 body {
-	margin-top:73px;
-	margin-bottom:20px;
-}
+  margin-top: 20vh;
+  margin-bottom: 20px; }
 
 h1 {
-	font-size:1.5em;
-}
+  font-size: 1.5em; }
 
 h2 {
-	font-size:1.1em;
-}
+  font-size: 1.1em; }
 
 a, a:hover, a:active, a:visited {
-	color:black;
-	text-decoration:underline;
-}
+  color: black;
+  text-decoration: underline; }
 
 #header {
-	position:fixed;
-	top:0;
-	left:0;
-	width:100vw;
-	border-bottom:1px solid black;
-	background-color:white;
-}
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  border-bottom: 1px solid black;
+  background-color: white; }
 
 #navButton {
-	display:none;
-	float:left;
-	padding:0.75em;
-}
+  display: none;
+  float: left;
+  padding: 0.75em; }
 
 #logo {
-	/* float:left; */
-	padding:0.5em;
-	/* margin-left:2.5em; */
-	width:100vw;
-	text-align:center;
-	border-bottom:1px solid grey;
-}
+  /* float:left; */
+  padding: 0.5em;
+  /* margin-left:2.5em; */
+  width: 100vw;
+  text-align: center;
+  border-bottom: 1px solid grey; }
 
 #logoImage {
-	width:40vw;
-}
+  width: 40vw; }
 
 #mainNavigation {
-	height:7.5vh;
-	font-family:Arial;
-}
-
-#mainNavigation button {
-	background-color:white;
-	border:none;
-	width:100%;
-	height:100%;
-	font-size:1em;
-}
-
-#mainNavigation li {
-	width:100%;
-	border-bottom:1px solid grey;
-	height:10vh;
-}
+  height: 7.5vh;
+  font-family: Arial; }
+  #mainNavigation button {
+    background-color: white;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 1em; }
+  #mainNavigation ul {
+    list-style: none;
+    text-align: center;
+    background-color: white;
+    width: 100%; }
+  #mainNavigation li {
+    width: 100%;
+    border-bottom: 1px solid grey;
+    height: 9vh; }
 
 #mainNavigation > ul > li > ul svg {
-	transform:rotate(-90deg);
-}
+  transform: rotate(-90deg); }
 
 #mainNavigation a, #mainNavigation a:hover, #mainNavigation a:active, #mainNavigation a:visited {
-	text-decoration:none;
-	display:block;
-	height:100%;
-	padding-top:15px;
-}
-
-#mainNavigation ul {
-	list-style:none;
-	text-align:center;
-	background-color:white;
-	width:100%;
-}
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  padding-top: 15px; }
 
 #firstDropdown {
-	height:100vh;
-	border-top:1px solid black;
-}
+  height: 100vh;
+  border-top: 1px solid black; }
 
 #firstDropdown > li {
-	height:10vh;
-	border-bottom:1px solid grey;
-}
+  height: 9vh;
+  border-bottom: 1px solid grey; }
 
 #bookingDropdown {
-	height:100px;
-}
+  height: 100px;
+  margin-top: 1px; }
+
+#vineyardDropdown {
+  margin-top: 1px; }
+
+#navMenu {
+  display: none; }
 
 #firstSection {
-	padding-top:5px;
-}
+  padding-top: 5px; }
 
 #sideNote {
-	margin-top:10px;
-	padding-bottom:20px;
-}
+  margin-top: 10px;
+  padding-bottom: 20px; }
 
 #footer {
-	height:40px;
-	width:100vw;
-	border-top:1px solid black;
-	padding:10px;
-	display:flex;
-	justify-content:space-between;
-}
+  height: 40px;
+  width: 100vw;
+  border-top: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; }
 
 #promotionals {
-	order:1;
-	flex-basis:70%;
-}
+  order: 1;
+  flex-basis: 70%; }
 
 #promotionals ul {
-	list-style:none;
-}
+  list-style: none; }
 
 #socialMedia {
-	order:2;
-	flex-basis:25%;
-	display:flex;
-	justify-content:space-between;
-}
-
-#socialMedia a {
-	flex-basis:20%;
-}
+  order: 2;
+  flex-basis: 25%;
+  display: flex;
+  justify-content: space-between; }
+  #socialMedia a {
+    flex-basis: 20%; }
 
 .dropdown, .dropdown2 {
-	display:none;
-}
+  display: none; }
 
 .content {
-	text-align:center;
-}
-
-.content p {
-	padding-top:5px;
-	font-size:0.9em;
-}
+  text-align: center; }
+  .content p {
+    padding-top: 5px;
+    font-size: 0.9em; }
 
 .subtitle {
-	color:grey;
-	padding-bottom:5px;
-	border-bottom:1px solid grey;
-}
+  color: gray;
+  padding-bottom: 5px;
+  border-bottom: 1px solid grey; }
 
 .homeSection img {
-	width:100vw;
-}
+  width: 100vw; }
+
+@media only screen and (min-width: 321px) {
+  #mainNavigation a, #mainNavigation a:hover, #mainNavigation a:active, #mainNavigation a:visited {
+    padding-top: 21px; } }
+@media only screen and (min-width: 760px) {
+  #firstDropdown {
+    display: none; }
+
+  #mainNavigation {
+    height: 6vh; }
+
+  #navMenu {
+    display: flex;
+    align-content: center;
+    justify-content: space-around; }
+    #navMenu li {
+      flex-basis: 25%;
+      border: 0;
+      height: 6vh; }
+      #navMenu li a {
+        width: 100%;
+        height: 100%;
+        padding-top: 13%; }
+
+  .dropbtn {
+    display: none; } }
+
+/*# sourceMappingURL=master.css.map */

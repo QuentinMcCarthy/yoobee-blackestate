@@ -3,7 +3,8 @@ function dropdown(target,target2) {
 		target.style.display = "block"
 
 		if(target2 != false){
-			target2.style.marginTop = "101px"
+			// target2.style.marginTop = "113px"
+			target2.style.marginTop ="18vh"
 		}
 	} else {
 		target.style.display = "none"
@@ -13,3 +14,7 @@ function dropdown(target,target2) {
 		}
 	}
 }
+
+// TEMPORARY TO STOP CODEKIT ERRORS
+
+dropdown(false,false);
